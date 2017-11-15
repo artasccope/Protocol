@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0C8D9FC-3A04-4627-87AD-5FAF6E06016D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Protocol</RootNamespace>
+    <AssemblyName>Protocol</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\UnityProjects\RuleOfGroup\Assets\Plugins\GameFW\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\AccountInfoDTO.cs" />
+    <Compile Include="DTO\DelayAndFloating.cs" />
+    <Compile Include="DTO\DelayCheckDTO.cs" />
+    <Compile Include="DTO\Fight\AbsFightModel.cs" />
+    <Compile Include="DTO\Fight\PosDTO.cs" />
+    <Compile Include="DTO\Fight\AttackDTO.cs" />
+    <Compile Include="DTO\Fight\Instance\BuildingInstance.cs" />
+    <Compile Include="DTO\Fight\BuildingModel.cs" />
+    <Compile Include="DTO\Fight\DamageDTO.cs" />
+    <Compile Include="DTO\Fight\FightDTO.cs" />
+    <Compile Include="DTO\Fight\FightEnums.cs" />
+    <Compile Include="DTO\Fight\FightRoomDTO.cs" />
+    <Compile Include="DTO\Fight\FightSkill.cs" />
+    <Compile Include="DTO\Fight\HeroModel.cs" />
+    <Compile Include="DTO\Fight\Instance\AbsFightInstance.cs" />
+    <Compile Include="DTO\Fight\Instance\HeroInstance.cs" />
+    <Compile Include="DTO\Fight\PosSyncDTO.cs" />
+    <Compile Include="DTO\Fight\PathRequestDTO.cs" />
+    <Compile Include="DTO\Fight\PlayerModel.cs" />
+    <Compile Include="DTO\Fight\SkillAttackDTO.cs" />
+    <Compile Include="DTO\Fight\SkillDataModel.cs" />
+    <Compile Include="DTO\SelectDTO.cs" />
+    <Compile Include="DTO\SelectRoomDTO.cs" />
+    <Compile Include="DTO\UserDTO.cs" />
+    <Compile Include="Encoder\BinaryArray.cs" />
+    <Compile Include="FightProtocol.cs" />
+    <Compile Include="LoginProtocol.cs" />
+    <Compile Include="MatchProtocol.cs" />
+    <Compile Include="Encoder\MessageEncoder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protocol.cs" />
+    <Compile Include="Result\AccountResult.cs" />
+    <Compile Include="SelectProtocol.cs" />
+    <Compile Include="Encoder\Serializer.cs" />
+    <Compile Include="Encoder\SocketModel.cs" />
+    <Compile Include="RoleProtocol.cs" />
+    <Compile Include="TimeProtocol.cs" />
+    <Compile Include="UserProtocol.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,8 @@
+C:\Users\mx\Documents\RuleOfTheGroup\Assets\Plugins\GameFW\Protocol.dll
+C:\Users\mx\Documents\RuleOfTheGroup\Assets\Plugins\GameFW\Protocol.pdb
+C:\Users\mx\Documents\Visual Studio 2017\Projects\MobaServer\Protocol\obj\Debug\Protocol.dll
+C:\Users\mx\Documents\Visual Studio 2017\Projects\MobaServer\Protocol\obj\Debug\Protocol.pdb
+C:\UnityProjects\RuleOfGroup\Assets\Plugins\GameFW\Protocol.dll
+C:\UnityProjects\RuleOfGroup\Assets\Plugins\GameFW\Protocol.pdb
+C:\Users\mx\Documents\Visual Studio 2017\Projects\MobaServer\Protocol\obj\Debug\Protocol.csproj.CoreCompileInputs.cache
+C:\Users\mx\Documents\Visual Studio 2017\Projects\MobaServer\Protocol\obj\Debug\Protocol.csprojResolveAssemblyReference.cache
